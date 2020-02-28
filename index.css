@@ -8,14 +8,14 @@ body {
 
 .navigation {
     display:flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     margin: 0; 
 }
 
 .navigation__list {
     display: flex; 
     min-width: 40%;
-    justify-content: space-around; 
+    justify-content: space-evenly;
     list-style-type: none;   
 }
 
@@ -37,14 +37,13 @@ text-decoration: underline;
 }
 
 .container {
-    min-height: 60vh; 
+    min-height: 80vh; 
     display: flex; 
     flex-direction: column; 
     align-items: center;
     justify-content: center; 
     background-color: #929292; 
     color:white; 
-    overflow: visible; 
 }
 
 .site-title {
@@ -66,6 +65,7 @@ text-decoration: underline;
     color:#F8F8F8; 
     background-color: #878787; 
     box-shadow: 3px 3px 5px #444444; 
+    margin-top: 10px; 
 }
 
 .container__button:hover {
@@ -74,7 +74,7 @@ text-decoration: underline;
 
 .card-container {
     display: flex; 
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
 }
 
 .card1, .card2, .card3 {  
@@ -85,6 +85,15 @@ text-decoration: underline;
     background-color: white; 
     color:black; 
     box-shadow: 0px 0px 5px #444444; 
+}
+
+.card1__title, .card2__title, .card3__title {
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.card1__text, .card2__text, .card3__text {
+    font-size: 14px; 
 }
 
 .footer-container {
